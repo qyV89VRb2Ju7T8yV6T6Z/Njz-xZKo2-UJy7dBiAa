@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAG &bull; Home</title>
+    <link rel="icon" href="/assets/logo.png" type="image">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        }); 
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <section class="container">
+        <div id="header"></div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <p>Explore the Finest and Emerging</p>
+            <h1><span class="animate"></span></h1>
+            <!-- <h1><span class="animate"></span></h1> -->
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+            var typed = new Typed('.animate', {
+                strings: ["Artistsans.", "Craftsmen.", "Designers."],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
+
+        <!-- Categories -->
+        <h2 class="heading">Categories</h2>
+        <div class="category">
+            <div class="category__row" data-aos="fade-up" data-aos-delay="200">
+                <a href="exhibitions.html"><img src="assets/card1.jpg" alt=""></a>
+                <p>Artworks</p>
+            </div>
+            <div class="category__row" data-aos="fade-up" data-aos-delay="300">
+                <a href="exhibitions.html"><img src="assets/card2.jpg" alt=""></a>
+                <p>Artifacts</p>
+            </div>
+            <div class="category__row" data-aos="fade-up" data-aos-delay="400">
+                <a href="exhibitions.html"><img src="assets/card3.jpg" alt=""></a>
+                <p>Antiques</p>
+            </div>
+        </div>
+
+        <!-- About Us -->
+        <h2 class="heading">About Us</h2>
+        <div class="about_us" data-aos="fade-up" data-aos-offset="200">
+            <p>
+                Virtue Art Gallery presents a curated collection of affordable,
+                contemporary Indian Art by India’s finest emerging and established artists.Virtue Art Gallery, in
+                association with ARTSY Art Foundation, a non-profit initiative, has the vision of empowering the art
+                community in India. The Foundation hosts educational programs which include art appreciation lectures
+                for collectors, artist development workshops, and presentations on Indian Art Heritage.
+            </p>
+            <blockquote>“A painting is worth a thousand confused art-gallery visitors.”</blockquote>
+        </div>
+
+        <!-- Testimonials -->
+        <h2 class="heading">Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+                <img src="assets/test2.jpg" alt="">
+                <h3>Akash Oomman</h3>
+                <h4>Artist</h4>
+                <p>Amazing Art Gallery. Lots of abstract and wonderful paintings. I was not a great fan of ancient art
+                    but this kinda Indian art is quite promising.</p>
+            </div>
+            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+                <img src="assets/test3.jpg" alt="">
+                <h3>Shreeram Pillai</h3>
+                <h4>Clay Artist</h4>
+                <p>I have travelled across all over the world. But this art gallery is unique as it contains best
+                    artwork from all genres including stippling, clay and bronze artifacts.</p>
+            </div>
+            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+                <img src="assets/test4.jpg" alt="">
+                <h3>Videeth Shetty</h3>
+                <h4>Painter</h4>
+                <p>I am stunned by the wonderful collection of such incredible art pieces. What made me visit is their
+                    noble role of helping young artisans to shape their future.</p>
+            </div>
+        </div>
+
+        <!-- Updates -->
+        <h2 class="heading">Sign up for more updates.</h2>
+        <div class="updates" data-aos="zoom-in" data-aos-delay="200">
+            <form action="">
+                <input type="email" name="email" id="news-email" placeholder="Your email address*" class="email">
+                <input type="submit" value="&rarr;" class="submit">
+            </form>
+        </div>
+
+        <div id="footer"></div>
+
+    </section>
+
+    <script>
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+            preloader.style.display = 'none';
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease'
+        });
+    </script>
+
+</body>
+
+</html>

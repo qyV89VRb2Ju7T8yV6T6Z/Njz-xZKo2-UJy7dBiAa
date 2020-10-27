@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAG &bull; Exhibitions</title>
+    <link rel="icon" href="/assets/logo.png" type="image">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        }); 
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+
+    <section class="container">
+
+        <div id="header"></div>
+
+        <h2 class="heading">Exhibitions</h2>
+
+        <div class="gallery_categories">
+            <p>Categories:</p>
+            <button class="filter-button" data-filter="All">All</button>
+            <button class="filter-button" data-filter="Newly-Added">Newly-Added</button>
+            <button class="filter-button" data-filter="Workshop">Workshop</button>
+            <button class="filter-button" data-filter="Artworks">Artworks</button>
+            <button class="filter-button" data-filter="Artifacts">Artifacts</button>
+            <button class="filter-button" data-filter="Antiques">Antiques</button>
+        </div>
+
+        <div class="gallery" data-aos="fade-up">
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="/img/Alexei_von_Jawlensky_-_Japanische_Blumen.jpg">
+                    <img src="img/Alexei_von_Jawlensky_-_Japanische_Blumen.jpg" alt="" srcset="">
+                </a>
+                <h2>Japanische Blumen</h2>
+                <h3>Alexei von Jawlensky</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Barque_au_matin.jpg">
+                    <img src="img/Barque_au_matin.jpg" alt="" srcset="">
+                </a>
+                <h2>Barque</h2>
+                <h3>Au matin</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All Newly-Added">
+                <a
+                    href="img/Escultura_d'un_home_amb_atributs_de_jaguar_(cara),_San_Miguel_la_Palotada,_fundació_la_Ruta_Maya.jpg">
+                    <img src="img/Escultura_d'un_home_amb_atributs_de_jaguar_(cara),_San_Miguel_la_Palotada,_fundació_la_Ruta_Maya.jpg"
+                        alt="" srcset="">
+                </a>
+                <h2>Ruta Maya</h2>
+                <h3>San Miguel</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All Newly-Added">
+                <a href="img/Maya_Sculpture_of_Sun_God_Standing_on_a_Turtle.jpg">
+                    <img src="img/Maya_Sculpture_of_Sun_God_Standing_on_a_Turtle.jpg" alt="" srcset="">
+                </a>
+                <h2>Maya</h2>
+                <h3>Sun God</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All ">
+                <a href="img/Puebla_-_Museo_Amparo_-_Nez_retroussé,_postclassique,_états_militaristes.jpg">
+                    <img src="img/Puebla_-_Museo_Amparo_-_Nez_retroussé,_postclassique,_états_militaristes.jpg" alt=""
+                        srcset="">
+                </a>
+                <h2>Puebla</h2>
+                <h3>Museo Amparo</h3>
+            </div>
+
+            <div class="gallery__item filter Artifacts All Workshop">
+                <a href="img/Toy_horse._From_Athens._4th_c._AD_(3471862162).jpg">
+                    <img src="img/Toy_horse._From_Athens._4th_c._AD_(3471862162).jpg" alt="" srcset="">
+                </a>
+                <h2>Toy horse (4th A.D)</h2>
+                <h3>Artist Name</h3>
+            </div>
+
+            <div class="gallery__item filter Artifacts All Workshop">
+                <a href="img/Bilboquet_(France),_possibly_ca._1780_(CH_18457451)-min.jpg">
+                    <img src="img/Bilboquet_(France),_possibly_ca._1780_(CH_18457451)-min.jpg" alt="" srcset="">
+                </a>
+                <h2>Bilboquet</h2>
+                <h3>France</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All ">
+                <a href="img/UnfinishedSculptureTuxtla.jpg">
+                    <img src="img/UnfinishedSculptureTuxtla.jpg" alt="" srcset="">
+                </a>
+                <h2>Unfinished Sculpture</h2>
+                <h3>Tuxtla</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All ">
+                <a href="img/Urna_del_gran_jaguar.jpg">
+                    <img src="img/Urna_del_gran_jaguar.jpg" alt="" srcset="">
+                </a>
+                <h2>Jaguar</h2>
+                <h3>Urna del gran</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/VruirNef.jpg">
+                    <img src="img/VruirNef.jpg" alt="" srcset="">
+                </a>
+                <h2>Abstract</h2>
+                <h3>Vruir Nef</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All">
+                <a href="img/Atlante,_Chichen_Itza,_Yucatan,_Mexique-min.jpg">
+                    <img src="img/Atlante,_Chichen_Itza,_Yucatan,_Mexique-min.jpg" alt="" srcset="">
+                </a>
+                <h2>Atlante</h2>
+                <h3>Mexique</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All">
+                <a href="/img/Andromeda_and_the_Sea_Monster,_and_Leda_and_the_Swan,_11364501.jpg">
+                    <img src="/img/Andromeda_and_the_Sea_Monster,_and_Leda_and_the_Swan,_11364501.jpg" alt="" srcset="">
+                </a>
+                <h2>Andromeda</h2>
+                <h3>Leda</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All">
+                <a href="img/Terre_cuite_pleureuse_Louvre_E27247.jpg">
+                    <img src="img/Terre_cuite_pleureuse_Louvre_E27247.jpg" alt="" srcset="">
+                </a>
+                <h2>Terre_cuite</h2>
+                <h3>Louvre</h3>
+            </div>
+
+            <div class="gallery__item filter Artifacts All">
+                <a href="img/Mohenjodaro_toy_001.jpg">
+                    <img src="img/Mohenjodaro_toy_001.jpg" alt="" srcset="">
+                </a>
+                <h2>Toy</h2>
+                <h3>Mohenjodaro</h3>
+            </div>
+
+            <div class="gallery__item filter Antiques All">
+                <a href="img/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg">
+                    <img src="img/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg" alt="" srcset="">
+                </a>
+                <h2>Shiva Lord</h2>
+                <h3>LACMA</h3>
+            </div>
+
+            <div class="gallery__item filter Artifacts All">
+                <a href="img/Possible_origin_of_maze_toys.jpg">
+                    <img src="img/Possible_origin_of_maze_toys.jpg" alt="" srcset="">
+                </a>
+                <h2>Maze Origin</h2>
+                <h3>FCM</h3>
+            </div>
+
+            <div class="gallery__item filter Artifacts All">
+                <a href="img/Spielzeugpferd_aus_Bronze_fcm.jpg">
+                    <img src="img/Spielzeugpferd_aus_Bronze_fcm.jpg" alt="" srcset="">
+                </a>
+                <h2>Spielzeugpferd</h2>
+                <h3>FCM</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Clo_Baril_Nature_et_Architecture15_(huile_sur_toile_130x90).jpg">
+                    <img src="img/Clo_Baril_Nature_et_Architecture15_(huile_sur_toile_130x90).jpg" alt="" srcset="">
+                </a>
+                <h2>Huile Sur</h2>
+                <h3>Clo Baril</h3>
+            </div>
+
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="">
+                    <img src="img/Franz_Marc_-_Il_cavallino_blu_(1912).jpg" alt="" srcset="">
+                </a>
+                <h2>Cavallino</h2>
+                <h3>Marc Franz</h3>
+            </div>
+
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Franz_Marc_-_The_Foxes_-_Google_Art_Project.jpg">
+                    <img src="img/Franz_Marc_-_The_Foxes_-_Google_Art_Project.jpg" alt="" srcset="">
+                </a>
+                <h2>The Foxes</h2>
+                <h3>Marc Franz</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Halle_Dom_Infotafel_Feininger_detail (1).jpg">
+                    <img src="img/Halle_Dom_Infotafel_Feininger_detail (1).jpg" alt="" srcset="">
+                </a>
+                <h2>Infotafel</h2>
+                <h3>Halle Dom</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Marc,_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg">
+                    <img src="img/Marc,_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg" alt="" srcset="">
+                </a>
+                <h2>Blue Horse</h2>
+                <h3>Marc Franz</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Marc,_Franz_-_Deer_in_a_Monastery_Garden_-_Google_Art_Project.jpg">
+                    <img src="img/Marc,_Franz_-_Deer_in_a_Monastery_Garden_-_Google_Art_Project.jpg" alt="" srcset="">
+                </a>
+                <h2>Deer in Monastery</h2>
+                <h3>Marc Franz</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Marc,_Franz_-_The_Tiger_-_Google_Art_Project.jpg">
+                    <img src="img/Marc,_Franz_-_The_Tiger_-_Google_Art_Project.jpg" alt="" srcset="">
+                </a>
+                <h2>The Tiger</h2>
+                <h3>Marc Franz</h3>
+            </div>
+
+            <div class="gallery__item filter Artworks All Workshop">
+                <a href="img/Mary_Barnes_painting_(detail).jpg">
+                    <img src="img/Mary_Barnes_painting_(detail).jpg" alt="" srcset="">
+                </a>
+                <h2>Mary</h2>
+                <h3>Barnes</h3>
+            </div>
+
+        </div>
+
+        <div id="footer"></div>
+
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                }
+                else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+
+    </script>
+
+
+    <script>
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+            preloader.style.display = 'none';
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease'
+        });
+    </script>
+
+
+</body>
+
+</html>
