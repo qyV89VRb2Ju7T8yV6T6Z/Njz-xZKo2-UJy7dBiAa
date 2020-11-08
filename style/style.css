@@ -181,14 +181,14 @@ header ul :hover {
     padding-top: 0;
   }
   .hero .hero-text h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
   }
   .hero .hero-text span {
     font-family: "Bitter", serif;
   }
   .hero .hero-text p {
-    font-size: 30px;
+    font-size: 25px;
     color: #c93235;
   }
   .hero .hero-text .hero-desc {
