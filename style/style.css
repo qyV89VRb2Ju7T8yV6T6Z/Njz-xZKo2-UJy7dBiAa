@@ -881,7 +881,7 @@ footer {
 }
 
 #donateForm {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -920,11 +920,20 @@ footer {
 
 .success-message {
   background-color: #fcfcfc;
-  width: 60%;
+  width: 70%;
   margin: 10px auto;
   padding: 20px;
   text-align: center;
   font-size: 18px;
   color: green;
+}
+
+@media (max-width: 1050px) {
+  #donateForm {
+    width: 100%;
+  }
+  .success-message {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
