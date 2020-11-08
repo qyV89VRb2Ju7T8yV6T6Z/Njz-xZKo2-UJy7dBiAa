@@ -9,23 +9,39 @@
     <link rel="stylesheet" href="/style/style.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        }); 
-    </script>
 </head>
 
 <body onload="myFunction()">
     <div id="loading"></div>
     <section class="container">
-        <div id="header"></div>
+
+        <!-- Navigation -->
+        <header class="sticky">
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="exhibitions.html">Gallery</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Hero -->
         <div class="hero">
-            <p>Explore the Finest and Emerging</p>
-            <h1><span class="animate"></span></h1>
+            <div class="hero-text">
+                <p data-aos="fade-right" data-aos-delay="200">Explore the Finest</p>
+                <h1 data-aos="fade-right" data-aos-delay="350"><span class="animate"></span></h1>
+                <p class="hero-desc" data-aos="fade-right" data-aos-delay="500">Virtue Gallery brings to you the joy of
+                    visiting the best pieces of our gallery at comfort of your home. Following this global pandemic we
+                    request you to stay at home and help these art community grow.</p>
+            </div>
+            <div class="hero-img" data-aos="fade-left" data-aos-offset="200">
+                <img src="assets/hero.png" alt="" srcset="">
+            </div>
             <!-- <h1><span class="animate"></span></h1> -->
         </div>
 
@@ -40,19 +56,19 @@
         </script>
 
         <!-- Categories -->
-        <h2 class="heading">Categories</h2>
+        <h2 class="heading">New & Trending</h2>
         <div class="category">
-            <div class="category__row" data-aos="fade-up" data-aos-delay="200">
-                <a href="exhibitions.html"><img src="assets/card1.jpg" alt=""></a>
-                <p>Artworks</p>
+            <div class="category__row" data-aos="fade-up" data-aos-delay="200" data-aos-offset="250">
+                <a href="exhibitions.html"><img src="assets/card1.png" alt=""></a>
+                <p>Mary by Barnes</p>
             </div>
-            <div class="category__row" data-aos="fade-up" data-aos-delay="300">
-                <a href="exhibitions.html"><img src="assets/card2.jpg" alt=""></a>
-                <p>Artifacts</p>
+            <div class="category__row" data-aos="fade-up" data-aos-delay="350" data-aos-offset="250">
+                <a href="exhibitions.html"><img src="assets/card2.png" alt=""></a>
+                <p>Ruta Maya by San Miguel</p>
             </div>
-            <div class="category__row" data-aos="fade-up" data-aos-delay="400">
-                <a href="exhibitions.html"><img src="assets/card3.jpg" alt=""></a>
-                <p>Antiques</p>
+            <div class="category__row" data-aos="fade-up" data-aos-delay="500" data-aos-offset="250">
+                <a href="exhibitions.html"><img src="assets/card3.png" alt=""></a>
+                <p>Barque by Au matin</p>
             </div>
         </div>
 
@@ -72,21 +88,21 @@
         <!-- Testimonials -->
         <h2 class="heading">Testimonials</h2>
         <div class="testimonials">
-            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+            <div class="testimonials__card" data-aos="fade-up" data-aos-delay="200" data-aos-offset="250">
                 <img src="assets/test2.jpg" alt="">
                 <h3>Akash Oomman</h3>
                 <h4>Artist</h4>
                 <p>Amazing Art Gallery. Lots of abstract and wonderful paintings. I was not a great fan of ancient art
                     but this kinda Indian art is quite promising.</p>
             </div>
-            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+            <div class="testimonials__card" data-aos="fade-up" data-aos-delay="350" data-aos-offset="250">
                 <img src="assets/test3.jpg" alt="">
                 <h3>Shreeram Pillai</h3>
                 <h4>Clay Artist</h4>
                 <p>I have travelled across all over the world. But this art gallery is unique as it contains best
                     artwork from all genres including stippling, clay and bronze artifacts.</p>
             </div>
-            <div class="testimonials__card" data-aos="zoom-in" data-aos-offset="300">
+            <div class="testimonials__card" data-aos="fade-up" data-aos-delay="500" data-aos-offset="250">
                 <img src="assets/test4.jpg" alt="">
                 <h3>Videeth Shetty</h3>
                 <h4>Painter</h4>
@@ -99,12 +115,14 @@
         <h2 class="heading">Sign up for more updates.</h2>
         <div class="updates" data-aos="zoom-in" data-aos-delay="200">
             <form action="">
-                <input type="email" name="email" id="news-email" placeholder="Your email address*" class="email">
+                <input type="email" name="email" placeholder="Your email address*" class="email">
                 <input type="submit" value="&rarr;" class="submit">
             </form>
         </div>
 
-        <div id="footer"></div>
+        <footer>
+            &copy; Copyright Virtue art gallery 2020. All rights reserved.
+        </footer>
 
     </section>
 
@@ -125,6 +143,10 @@
         });
     </script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>

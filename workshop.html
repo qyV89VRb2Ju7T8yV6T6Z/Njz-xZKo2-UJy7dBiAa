@@ -8,13 +8,7 @@
     <link rel="icon" href="/assets/logo.png" type="image">
     <link rel="stylesheet" href="/style/style.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        }); 
-    </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />>
 </head>
 
 <body onload="myFunction()">
@@ -22,7 +16,21 @@
 
     <section class="container">
 
-        <div id="header"></div>
+        <!-- Navigation -->
+        <header class="sticky">
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exhibitions.html">Gallery</a></li>
+                    <li><a href="workshop.html" class="active">Workshop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
+
 
         <!-- workshops -->
         <h2 class="heading">Upcoming Events</h2>
@@ -64,7 +72,9 @@
             </div>
         </div>
 
-        <div id="footer"></div>
+        <footer>
+            &copy; Copyright Virtue art gallery 2020. All rights reserved.
+        </footer>
 
     </section>
 

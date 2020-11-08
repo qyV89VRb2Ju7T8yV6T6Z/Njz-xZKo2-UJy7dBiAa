@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="/style/style.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        }); 
-    </script>
 </head>
 
 <body onload="myFunction()">
     <div id="loading"></div>
 
     <section class="container">
-
-        <div id="header"></div>
+        <!-- Navigation -->
+        <header class="sticky">
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exhibitions.html">Gallery</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Contact-->
         <h2 class="heading">Details</h2>
@@ -59,22 +65,22 @@
                 <th>Phone</th>
             </thead>
             <tbody>
-                <tr data-aos="zoom-in">
+                <tr data-aos="zoom-in" data-aos-delay="200" data-aos-offset="100">
                     <td data-label="Sector">Rohan Patil, Event Manager</td>
                     <td data-label="Email">rohanpatil. vag@maill.com</td>
                     <td data-label="Phone">9292902030/ 7889697808</td>
                 </tr>
-                <tr data-aos="zoom-in">
+                <tr data-aos="zoom-in" data-aos-delay="350" data-aos-offset="100">
                     <td data-label="Sector">Raksha Bhat, Help Desk</td>
                     <td data-label="Email">rakshabhat. vag@maill.com</td>
                     <td data-label="Phone">922442030</td>
                 </tr>
-                <tr data-aos="zoom-in">
+                <tr data-aos="zoom-in" data-aos-delay="500" data-aos-offset="100">
                     <td data-label="Sector">Ajit Kulkarni, Donation</td>
                     <td data-label="Email">ajitkulkarni. vag@maill.com</td>
                     <td data-label="Phone">21949493949/ 9782397824</td>
                 </tr>
-                <tr data-aos="zoom-in">
+                <tr data-aos="zoom-in" data-aos-delay="650" data-aos-offset="100">
                     <td data-label="Sector">Datanas Pal, Technical Manager</td>
                     <td data-label="Email">datanaspal. vag@maill.com</td>
                     <td data-label="Phone">561564561561</td>
@@ -82,7 +88,9 @@
             </tbody>
         </table>
 
-        <div id="footer"></div>
+        <footer>
+            &copy; Copyright Virtue art gallery 2020. All rights reserved.
+        </footer>
 
     </section>
 

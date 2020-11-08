@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,9 +11,8 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #fff;
   position: relative;
-  margin-top: 67px;
 }
 
 .container {
@@ -20,7 +20,9 @@ body {
 }
 
 header {
-  background: #ecece4f2;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,12 +32,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 10% 0 10%;
-  z-index: 99;
+  padding: 0 20px 0 20px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 header a img {
@@ -52,7 +54,7 @@ header ul {
 header ul li {
   font-size: 18px;
   list-style: none;
-  padding: 20px;
+  padding: 15px;
 }
 
 header ul li a {
@@ -64,6 +66,7 @@ header ul li a {
 
 header ul li .active {
   color: #c93235;
+  border-bottom: 2px solid #c93235;
 }
 
 header ul :hover {
@@ -71,11 +74,8 @@ header ul :hover {
 }
 
 @media (max-width: 768px) {
-  body {
-    margin-top: 107.8px;
-  }
   header {
-    background: rgba(221, 209, 200, 0.95);
+    background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -83,11 +83,10 @@ header ul :hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 10% 0 10%;
+    padding: 0 10px 0 10px;
     z-index: 99;
   }
   header a img {
@@ -126,52 +125,105 @@ header ul :hover {
   }
 }
 
-@media (max-width: 571px) {
-  body {
-    margin-top: 148.6px;
-  }
-}
-
 .hero {
-  padding: 22vh 0 22vh;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.hero h1 {
-  font-size: 70px;
+.hero .hero-text {
+  -ms-flex-preferred-size: 50vw;
+      flex-basis: 50vw;
+  padding-top: 10vw;
+}
+
+.hero .hero-text h1 {
+  font-size: 60px;
   text-transform: uppercase;
 }
 
-.hero span {
-  font-family: "Philosopher", serif;
+.hero .hero-text span {
+  font-family: "Bitter", serif;
 }
 
-.hero p {
-  font-size: 40px;
+.hero .hero-text p {
+  font-size: 50px;
   color: #c93235;
-  text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+.hero .hero-text .hero-desc {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #323232;
+  line-height: 150%;
+}
+
+.hero .hero-img {
+  -ms-flex-preferred-size: 50vw;
+      flex-basis: 50vw;
+}
+
+.hero .hero-img img {
+  width: 100%;
+  padding: 40px;
+}
+
+@media (max-width: 1005px) {
   .hero {
-    padding: 18vh 0 18vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12vh 0 12vh;
   }
-  .hero h1 {
+  .hero .hero-text {
+    -ms-flex-preferred-size: 100vw;
+        flex-basis: 100vw;
+    padding-top: 0;
+  }
+  .hero .hero-text h1 {
     font-size: 50px;
+    text-transform: uppercase;
   }
-  .hero p {
+  .hero .hero-text span {
+    font-family: "Bitter", serif;
+  }
+  .hero .hero-text p {
     font-size: 30px;
+    color: #c93235;
+  }
+  .hero .hero-text .hero-desc {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #323232;
+    line-height: 150%;
+  }
+  .hero .hero-img {
+    display: none;
   }
 }
 
 .heading {
-  font-family: "Philosopher", serif;
+  font-family: "Bitter", serif;
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.heading::before {
+  content: '~ ';
+}
+
+.heading::after {
+  content: ' ~';
+}
+
+@media (max-width: 1005px) {
+  .heading {
+    font-size: 25px;
+  }
 }
 
 .category {
@@ -199,13 +251,13 @@ header ul :hover {
 }
 
 .category__row a :hover {
-  padding: 4px;
+  border: 3px dashed #c93235;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 .category__row p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -242,7 +294,7 @@ header ul :hover {
     transition: all 0.3s ease-out;
   }
   .category__row p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -305,6 +357,7 @@ header ul :hover {
 
 .testimonials__card p {
   font-size: 20px;
+  line-height: 150%;
 }
 
 .testimonials__card:hover {
@@ -331,7 +384,7 @@ header ul :hover {
 }
 
 .updates {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,11 +404,12 @@ header ul :hover {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  border-bottom: 2px solid #c93235;
+  border: 2px solid #c93235;
+  border-radius: 6px;
 }
 
 .updates form .email {
-  background-color: #f5f5f5;
+  background-color: #fff;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -379,7 +433,7 @@ header ul :hover {
 }
 
 .updates form .submit {
-  background-color: #f5f5f5;
+  background-color: #fff;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -390,6 +444,7 @@ header ul :hover {
 }
 
 footer {
+  margin-top: 50px;
   text-align: center;
   padding-bottom: 30px;
   font-size: 20px;
@@ -411,12 +466,12 @@ footer {
 }
 
 ::-moz-selection {
-  color: #f5f5f5;
+  color: #fff;
   background: #c93235;
 }
 
 ::selection {
-  color: #f5f5f5;
+  color: #fff;
   background: #c93235;
 }
 
@@ -539,6 +594,7 @@ footer {
 
 .founders__card p {
   font-size: 20px;
+  line-height: 150%;
 }
 
 .founders__card:hover {
@@ -571,12 +627,12 @@ footer {
 .founders_mission p {
   padding-bottom: 20px;
   font-size: 22px;
-  text-indent: 100px;
+  text-indent: 50px;
   line-height: 35px;
 }
 
 .founders_mission p span {
-  font-size: 24px;
+  font-size: 20px;
   color: #c93235;
 }
 
@@ -673,7 +729,7 @@ footer {
 
 .table th {
   background-color: #c93235;
-  color: #f5f5f5;
+  color: #fff;
 }
 
 @media (max-width: 642px) {
@@ -708,21 +764,8 @@ footer {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #f5f5f5 url(/assets/loading.gif) no-repeat center;
-  margin-top: -67px;
+  background: #fff url(/assets/loading.gif) no-repeat center;
   z-index: 99999;
-}
-
-@media (max-width: 768px) {
-  #loading {
-    margin-top: -107.8px;
-  }
-}
-
-@media (max-width: 571px) {
-  #loading {
-    margin-top: -148.6px;
-  }
 }
 
 .gallery {
@@ -735,25 +778,32 @@ footer {
 .gallery__item {
   width: 100%;
   margin: 0 0 15px;
-  padding: 5px;
+  padding: 10px;
   overflow: hidden;
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
+  border-radius: 10px;
 }
 
 .gallery__item img {
-  border-radius: 10px;
+  border-radius: 5px;
   max-width: 100%;
 }
 
 .gallery__item h2 {
-  color: #c93235;
+  color: #323232;
   font-size: 22px;
 }
 
 .gallery__item h3 {
-  color: #323232;
+  color: #c93235;
   font-size: 18px;
+}
+
+.gallery__item:hover {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 2px solid #bebebe;
 }
 
 @media (max-width: 1110px) {
@@ -806,7 +856,7 @@ footer {
 .gallery_categories button:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: #f5f5f5;
+  color: #fff;
   background-color: #c93235;
 }
 
@@ -828,5 +878,53 @@ footer {
   .gallery_categories .filter-button {
     margin-top: 10px;
   }
+}
+
+#donateForm {
+  width: 60%;
+  margin: auto;
+}
+
+#donateForm .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#donateForm .form-group label {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#donateForm .form-group input,
+#donateForm .form-group textarea {
+  font-size: 16px;
+  padding: 10px;
+}
+
+#donateForm .donate-submit {
+  background-color: #c93235;
+  padding: 8px 30px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: #fcfcfc;
+  width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

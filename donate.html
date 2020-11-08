@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAG &bull; Contact</title>
+    <link rel="icon" href="/assets/logo.png" type="image">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+
+    <section class="container">
+        <!-- Navigation -->
+        <header class="sticky">
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exhibitions.html">Gallery</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2 class="heading">Donation Form</h2>
+        <div class="success-message" style="display:none" data-aos="zoom-in">Form submitted successfully. Thanks for contributing. We will contact you soon.</div>
+        <form id="donateForm" data-aos="fade-up">
+            <div class="form-group">
+                <label for="exampleFullName">Name</label>
+                <input type="text" class="form-control fullname" id="exampleFullName" placeholder="Enter Full Name"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="exampleEmail">Email</label>
+                <input type="email" class="form-control email" id="exampleEmail" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="examplePhone">Phone</label>
+                <input type="number" class="form-control phone" id="examplePhone" placeholder="Enter Phone" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleAmount">Amount</label>
+                <input type="number" class="form-control amount" id="exampleAmount" placeholder="Enter Amount" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleMessage">Donation message</label>
+                <textarea class="form-control message" id="exampleMessage" placeholder="Enter Message" cols="30"
+                    rows="3" required></textarea>
+            </div>
+            <button type="submit" class="donate-submit">Submit</button>
+        </form>
+
+        <footer>
+            &copy; Copyright Virtue art gallery 2020. All rights reserved.
+        </footer>
+
+        <script>
+            var preloader = document.getElementById('loading');
+            function myFunction() {
+                preloader.style.display = 'none';
+            }
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 100, // offset (in px) from the original trigger point
+                delay: 200, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease'
+            });
+        </script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+        <script src="script/database.js"></script>
+
+</body>
+
+</html>

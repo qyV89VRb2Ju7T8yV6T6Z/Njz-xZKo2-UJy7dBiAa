@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
 
-$background-color: #f5f5f5;
+$background-color: #fff;
 $foreground-color: #323232;
 $accent-color: #c93235;
 
@@ -9,7 +10,7 @@ $padding-100: 100px;
 $padding-50: 50px;
 
 $font: "Didact Gothic", sans-serif;
-$font2: "Philosopher", serif;
+$font2: "Bitter", serif;
 
 * {
     box-sizing: border-box;
@@ -23,7 +24,7 @@ $font2: "Philosopher", serif;
 body {
     background-color: $background-color;
     position: relative;
-    margin-top: 67px;
+    // padding-top: 20px;
 }
 
 .container {
@@ -31,16 +32,20 @@ body {
 }
 
 header {
-    background: #ecece4f2;
+    background: $background-color;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 10% 0 10%;
-    z-index: 99;
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    // margin-top: 20px;
+    // z-index: 99;
     a {
         img {
             width: 100px;
@@ -52,7 +57,7 @@ header {
         li {
             font-size: 18px;
             list-style: none;
-            padding: 20px;
+            padding: 15px;
             a {
                 text-decoration: none;
                 color: $foreground-color;
@@ -61,6 +66,7 @@ header {
             }
             .active {
                 color: $accent-color;
+                border-bottom: 2px solid $accent-color;
             }
         }
         :hover {
@@ -70,18 +76,15 @@ header {
 }
 
 @media (max-width: 768px) {
-    body {
-        margin-top: 107.8px;
-    }
     header {
-        background: rgba(221, 209, 200, 0.95);
+        background: $background-color;
         display: flex;
         flex-direction: column;
-        position: fixed;
+        // position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 0 10% 0 10%;
+        padding: 0 10px 0 10px;
         z-index: 99;
         a {
             img {
@@ -115,37 +118,69 @@ header {
     }
 }
 
-@media (max-width: 571px) {
-    body {
-        margin-top: 148.6px;
-    }
-}
-
 .hero {
-    padding: 22vh 0 22vh;
-    text-align: center;
-    h1 {
-        font-size: 70px;
-        text-transform: uppercase;
-    }
-    span {
-        font-family: $font2;
-    }
-    p {
-        font-size: 40px;
-        color: $accent-color;
-        text-transform: uppercase;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 18vh 0 18vh;
+    // padding: 22vh 0 22vh;
+    display: flex;
+    .hero-text {
+        flex-basis: 50vw;
+        padding-top: 10vw;
         h1 {
-            font-size: 50px;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+        span {
+            font-family: $font2;
         }
         p {
-            font-size: 30px;
+            font-size: 50px;
+            color: $accent-color;
+        }
+        .hero-desc {
+            margin-top: 20px;
+            font-size: 22px;
+            color: $foreground-color;
+            line-height: 150%;
+        }
+    }
+    .hero-img {
+        flex-basis: 50vw;
+        img {
+            width: 100%;
+            padding: 40px;
+        }
+    }
+}
+
+@media (max-width: 1005px) {
+    .hero {
+        display: flex;
+        // flex-basis: 100vw;
+        padding: 12vh 0 12vh;
+        // width: 100vw;
+        .hero-text {
+            flex-basis: 100vw;
+            padding-top: 0;
+            h1 {
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            span {
+                font-family: $font2;
+            }
+            p {
+                font-size: 30px;
+                color: $accent-color;
+            }
+            .hero-desc {
+                margin-top: 20px;
+                font-size: 20px;
+                color: $foreground-color;
+                line-height: 150%;
+            }
+        }
+        .hero-img {
+            // flex-basis: 100vw;
+            display: none;
         }
     }
 }
@@ -158,6 +193,18 @@ header {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+.heading::before{
+    content: '~ ';
+}
+.heading::after{
+    content: ' ~';
+}
+
+@media (max-width: 1005px){
+    .heading{
+        font-size: 25px;
+    }
 }
 
 .category {
@@ -174,12 +221,12 @@ header {
                 background-color: $accent-color;
             }
             :hover {
-                padding: 4px;
+                border: 3px dashed $accent-color;
                 transition: all 0.3s ease-out;
             }
         }
         p {
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 }
@@ -207,7 +254,7 @@ header {
                 }
             }
             p {
-                font-size: 24px;
+                font-size: 20px;
             }
         }
     }
@@ -255,6 +302,7 @@ header {
         }
         p {
             font-size: 20px;
+            line-height: 150%;
         }
     }
     &__card:hover {
@@ -275,7 +323,7 @@ header {
 }
 
 .updates {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     form {
@@ -283,7 +331,8 @@ header {
         justify-items: center;
         flex-direction: row;
         width: 100%;
-        border-bottom: 2px solid $accent-color;
+        border: 2px solid $accent-color;
+        border-radius: 6px;
         .email {
             background-color: $background-color;
             font-size: 18px;
@@ -307,6 +356,7 @@ header {
 }
 
 footer {
+    margin-top: 50px;
     text-align: center;
     padding-bottom: 30px;
     font-size: 20px;
@@ -428,6 +478,7 @@ footer {
         }
         p {
             font-size: 20px;
+            line-height: 150%;
         }
     }
     &__card:hover {
@@ -452,10 +503,10 @@ footer {
     p {
         padding-bottom: 20px;
         font-size: 22px;
-        text-indent: 100px;
+        text-indent: 50px;
         line-height: 35px;
         span {
-            font-size: 24px;
+            font-size: 20px;
             color: $accent-color;
         }
     }
@@ -581,19 +632,19 @@ footer {
     width: 100%;
     height: 100vh;
     background: $background-color url(/assets/loading.gif) no-repeat center;
-    margin-top: -67px;
+    // margin-top: -67px;
     z-index: 99999;
 }
-@media (max-width: 768px) {
-    #loading {
-        margin-top: -107.8px;
-    }
-}
-@media (max-width: 571px) {
-    #loading {
-        margin-top: -148.6px;
-    }
-}
+// @media (max-width: 768px) {
+//     #loading {
+//         margin-top: -107.8px;
+//     }
+// }
+// @media (max-width: 571px) {
+//     #loading {
+//         margin-top: -148.6px;
+//     }
+// }
 
 .gallery {
     columns: 4;
@@ -601,21 +652,27 @@ footer {
     &__item {
         width: 100%;
         margin: 0 0 15px;
-        padding: 5px;
+        padding: 10px;
         overflow: hidden;
         break-inside: avoid;
+        // background-color: #f5f5f5;
+        border-radius: 10px;
         img {
-            border-radius: 10px;
+            border-radius: 5px;
             max-width: 100%;
         }
         h2 {
-            color: $accent-color;
+            color: $foreground-color;
             font-size: 22px;
         }
         h3 {
-            color: $foreground-color;
+            color: $accent-color;
             font-size: 18px;
         }
+    }
+    &__item:hover {
+        transition: all 0.3s ease-out;
+        border: 2px solid #bebebe;
     }
 }
 @media (max-width: 1110px) {
@@ -669,4 +726,43 @@ footer {
             margin-top: 10px;
         }
     }
+}
+
+#donateForm {
+    width: 60%;
+    margin: auto;
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        label {
+            font-family: $font;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        input,
+        textarea {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+    .donate-submit {
+        background-color: $accent-color;
+        padding: 8px 30px;
+        color: $background-color;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.success-message {
+    background-color: #fcfcfc;
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: green;
 }
