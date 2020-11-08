@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAG &bull; Contact</title>
+    <title>VAG &bull; Contribute</title>
     <link rel="icon" href="/assets/logo.png" type="image">
     <link rel="stylesheet" href="/style/style.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -25,7 +25,7 @@
                     <li><a href="workshop.html">Workshop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="donate.html" class="active">Contribute</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,25 +34,25 @@
         <div class="success-message" style="display:none" data-aos="zoom-in">Form submitted successfully. Thanks for contributing. We will contact you soon.</div>
         <form id="donateForm" data-aos="fade-up">
             <div class="form-group">
-                <label for="exampleFullName">Name</label>
-                <input type="text" class="form-control fullname" id="exampleFullName" placeholder="Enter Full Name"
+                <label for="exampleFullName">Full name</label>
+                <input type="text" class="form-control fullname" id="exampleFullName" placeholder="i.e John Doe"
                     required>
             </div>
             <div class="form-group">
-                <label for="exampleEmail">Email</label>
-                <input type="email" class="form-control email" id="exampleEmail" placeholder="Enter Email" required>
+                <label for="exampleEmail">Email address</label>
+                <input type="email" class="form-control email" id="exampleEmail" placeholder="i.e abc@mail.com" required>
             </div>
             <div class="form-group">
-                <label for="examplePhone">Phone</label>
-                <input type="number" class="form-control phone" id="examplePhone" placeholder="Enter Phone" required>
+                <label for="examplePhone">Phone number</label>
+                <input type="number" class="form-control phone" id="examplePhone" placeholder="+XX XXX XXX XXXX" required>
             </div>
             <div class="form-group">
-                <label for="exampleAmount">Amount</label>
-                <input type="number" class="form-control amount" id="exampleAmount" placeholder="Enter Amount" required>
+                <label for="exampleType">Type of contribution</label>
+                <input type="text" class="form-control type" id="exampleType" placeholder="i.e Donating art, money or specify other" required>
             </div>
             <div class="form-group">
                 <label for="exampleMessage">Donation message</label>
-                <textarea class="form-control message" id="exampleMessage" placeholder="Enter Message" cols="30"
+                <textarea class="form-control message" id="exampleMessage" placeholder="Leave a message" cols="30"
                     rows="3" required></textarea>
             </div>
             <button type="submit" class="donate-submit">Submit</button>

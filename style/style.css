@@ -7,12 +7,14 @@
   padding: 0;
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  color: #323232;
+  color: #242424;
 }
 
 body {
-  background-color: #fff;
+  background-color: #FFFFFF;
   position: relative;
+  background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, white, white);
 }
 
 .container {
@@ -20,7 +22,7 @@ body {
 }
 
 header {
-  background: #fff;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
@@ -59,7 +61,7 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  color: #323232;
+  color: #242424;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -75,7 +77,7 @@ header ul :hover {
 
 @media (max-width: 768px) {
   header {
-    background: #fff;
+    background: #FFFFFF;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,7 +115,7 @@ header ul :hover {
   }
   header ul li a {
     text-decoration: none;
-    color: #323232;
+    color: #242424;
     text-transform: uppercase;
     letter-spacing: 0.03em;
   }
@@ -154,7 +156,7 @@ header ul :hover {
 .hero .hero-text .hero-desc {
   margin-top: 20px;
   font-size: 22px;
-  color: #323232;
+  color: #242424;
   line-height: 150%;
 }
 
@@ -194,7 +196,7 @@ header ul :hover {
   .hero .hero-text .hero-desc {
     margin-top: 20px;
     font-size: 20px;
-    color: #323232;
+    color: #242424;
     line-height: 150%;
   }
   .hero .hero-img {
@@ -330,6 +332,7 @@ header ul :hover {
 }
 
 .testimonials__card {
+  background-color: #FFFFFF;
   text-align: center;
   width: 30%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -409,7 +412,7 @@ header ul :hover {
 }
 
 .updates form .email {
-  background-color: #fff;
+  background-color: #FFFFFF;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -417,23 +420,23 @@ header ul :hover {
 }
 
 .updates form ::-webkit-input-placeholder {
-  color: #323232;
+  color: #242424;
 }
 
 .updates form :-ms-input-placeholder {
-  color: #323232;
+  color: #242424;
 }
 
 .updates form ::-ms-input-placeholder {
-  color: #323232;
+  color: #242424;
 }
 
 .updates form ::placeholder {
-  color: #323232;
+  color: #242424;
 }
 
 .updates form .submit {
-  background-color: #fff;
+  background-color: #FFFFFF;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -466,12 +469,12 @@ footer {
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: #FFFFFF;
   background: #c93235;
 }
 
 ::selection {
-  color: #fff;
+  color: #FFFFFF;
   background: #c93235;
 }
 
@@ -573,6 +576,7 @@ footer {
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
+  background-color: #FFFFFF;
 }
 
 .founders__card img {
@@ -718,18 +722,19 @@ footer {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 50px;
+  background-color: #FFFFFF;
 }
 
 .table td,
 .table th {
   font-size: 18px;
   padding: 15px 20px;
-  border: 1px solid #323232;
+  border: 1px solid #242424;
 }
 
 .table th {
   background-color: #c93235;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 @media (max-width: 642px) {
@@ -764,7 +769,7 @@ footer {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url(/assets/loading.gif) no-repeat center;
+  background: #FFFFFF url(/assets/loading.gif) no-repeat center;
   z-index: 99999;
 }
 
@@ -791,7 +796,7 @@ footer {
 }
 
 .gallery__item h2 {
-  color: #323232;
+  color: #242424;
   font-size: 22px;
 }
 
@@ -856,7 +861,7 @@ footer {
 .gallery_categories button:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #c93235;
 }
 
@@ -904,14 +909,16 @@ footer {
 
 #donateForm .form-group input,
 #donateForm .form-group textarea {
+  background-color: #FFFFFF;
   font-size: 16px;
   padding: 10px;
+  border: 2px solid #bebebe;
 }
 
 #donateForm .donate-submit {
   background-color: #c93235;
   padding: 8px 30px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 18px;
   text-transform: uppercase;
   border: none;

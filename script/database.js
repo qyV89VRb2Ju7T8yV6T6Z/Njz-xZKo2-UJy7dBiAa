@@ -23,7 +23,7 @@ $('#donateForm').submit(function (e) {
         name: $('.fullname').val(),
         email: $('.email').val(),
         phone: $('.phone').val(),
-        amount: $('.amount').val(),
+        type: $('.type').val(),
         message: $('.message').val()
     });
 
