@@ -18,7 +18,9 @@ body {
 }
 
 .container {
-  margin: 0 10%;
+  padding: 0 5%;
+  max-width: 1400px;
+  margin: auto;
 }
 
 header {
@@ -34,17 +36,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 0 20px 0 20px;
   margin-top: 20px;
   border-radius: 5px;
 }
 
 header a img {
   width: 100px;
-  padding: 10px;
+  padding: 15px;
 }
 
 header ul {
@@ -808,7 +807,9 @@ footer {
 .gallery__item:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  border: 2px solid #bebebe;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1110px) {
@@ -854,7 +855,7 @@ footer {
   padding: 5px 15px;
   border-radius: 100px;
   border: 2px solid #c93235;
-  background-color: transparent;
+  background-color: #FFFFFF;
   margin: 0px 10px;
 }
 

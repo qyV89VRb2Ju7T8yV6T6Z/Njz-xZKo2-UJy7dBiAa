@@ -29,7 +29,9 @@ body {
 }
 
 .container {
-    margin: 0 10%;
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 header {
@@ -39,18 +41,17 @@ header {
     justify-content: space-between;
     align-items: center;
     // position: fixed;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100%;
-    padding: 0 20px 0 20px;
+    // padding: 0 20px 0 20px;
     margin-top: 20px;
     border-radius: 5px;
-    // margin-top: 20px;
     // z-index: 99;
     a {
         img {
             width: 100px;
-            padding: 10px;
+            padding: 15px;
         }
     }
     ul {
@@ -676,7 +677,9 @@ footer {
     }
     &__item:hover {
         transition: all 0.3s ease-out;
-        border: 2px solid #bebebe;
+        // border: 2px solid #bebebe;
+        background-color: $background-color;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     }
 }
 @media (max-width: 1110px) {
@@ -706,7 +709,7 @@ footer {
         padding: 5px 15px;
         border-radius: 100px;
         border: 2px solid $accent-color;
-        background-color: transparent;
+        background-color: $background-color;
         margin: 0px 10px;
     }
     button:hover {
