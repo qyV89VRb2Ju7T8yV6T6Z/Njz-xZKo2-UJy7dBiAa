@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), -webkit-gradient(linear, left top, right top, from(white), to(white));
   background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, white, white);
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
@@ -75,7 +75,7 @@ header ul :hover {
 
 @media (max-width: 768px) {
   header {
-    background: #FFFFFF;
+    background: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,11 +213,11 @@ header ul :hover {
 }
 
 .heading::before {
-  content: '~ ';
+  content: "~ ";
 }
 
 .heading::after {
-  content: ' ~';
+  content: " ~";
 }
 
 @media (max-width: 1005px) {
@@ -256,7 +256,8 @@ header ul :hover {
   transition: all 0.3s ease-out;
 }
 
-.category__row p {
+.category p {
+  padding-top: 5px;
   font-size: 20px;
 }
 
@@ -315,6 +316,12 @@ header ul :hover {
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .about_us p {
+    text-indent: 50px;
+  }
+}
+
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +337,7 @@ header ul :hover {
 }
 
 .testimonials__card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
   width: 30%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -359,6 +366,14 @@ header ul :hover {
 .testimonials__card p {
   font-size: 20px;
   line-height: 150%;
+}
+
+.testimonials__card p::before {
+  content: open-quote;
+}
+
+.testimonials__card p:after {
+  content: close-quote;
 }
 
 .testimonials__card:hover {
@@ -410,7 +425,7 @@ header ul :hover {
 }
 
 .updates form .email {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -434,7 +449,7 @@ header ul :hover {
 }
 
 .updates form .submit {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
@@ -467,12 +482,12 @@ footer {
 }
 
 ::-moz-selection {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #c93235;
 }
 
 ::selection {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #c93235;
 }
 
@@ -574,7 +589,7 @@ footer {
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .founders__card img {
@@ -597,6 +612,14 @@ footer {
 .founders__card p {
   font-size: 20px;
   line-height: 150%;
+}
+
+.founders__card p::before {
+  content: open-quote;
+}
+
+.founders__card p:after {
+  content: close-quote;
 }
 
 .founders__card:hover {
@@ -636,6 +659,12 @@ footer {
 .founders_mission p span {
   font-size: 20px;
   color: #c93235;
+}
+
+@media (max-width: 768px) {
+  .founders_mission p {
+    font-size: 20px;
+  }
 }
 
 .contact {
@@ -720,7 +749,7 @@ footer {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .table td,
@@ -732,7 +761,7 @@ footer {
 
 .table th {
   background-color: #c93235;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: 642px) {
@@ -767,7 +796,8 @@ footer {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #FFFFFF url(/assets/loading.gif) no-repeat center;
+  background: #ffffff url(/assets/loading.gif) no-repeat center;
+  margin-top: -20px;
   z-index: 99999;
 }
 
@@ -806,9 +836,9 @@ footer {
 .gallery__item:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1110px) {
@@ -854,14 +884,14 @@ footer {
   padding: 5px 15px;
   border-radius: 100px;
   border: 2px solid #c93235;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0px 10px;
 }
 
 .gallery_categories button:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #c93235;
 }
 
@@ -909,7 +939,7 @@ footer {
 
 #donateForm .form-group input,
 #donateForm .form-group textarea {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 16px;
   padding: 10px;
   border: 2px solid #bebebe;
@@ -918,7 +948,7 @@ footer {
 #donateForm .donate-submit {
   background-color: #c93235;
   padding: 8px 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
