@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Didact+Gothic&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Didact Gothic", sans-serif;
@@ -12,8 +12,22 @@
 body {
   background-color: #ffffff;
   position: relative;
-  background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), -webkit-gradient(linear, left top, right top, from(white), to(white));
-  background-image: repeating-linear-gradient(135deg, rgba(216, 216, 216, 0.1) 0px, rgba(216, 216, 216, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, white, white);
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(216, 216, 216, 0.1) 0px,
+      rgba(216, 216, 216, 0.1) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(216, 216, 216, 0.1) 0px,
+      rgba(216, 216, 216, 0.1) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(90deg, white, white);
 }
 
 .container {
@@ -25,16 +39,16 @@ body {
 header {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-top: 20px;
   border-radius: 5px;
@@ -81,8 +95,8 @@ header ul :hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,13 +112,13 @@ header ul :hover {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   header ul li {
     font-size: 16px;
@@ -133,7 +147,7 @@ header ul :hover {
 
 .hero .hero-text {
   -ms-flex-preferred-size: 50vw;
-      flex-basis: 50vw;
+  flex-basis: 50vw;
   padding-top: 10vw;
 }
 
@@ -160,7 +174,7 @@ header ul :hover {
 
 .hero .hero-img {
   -ms-flex-preferred-size: 50vw;
-      flex-basis: 50vw;
+  flex-basis: 50vw;
 }
 
 .hero .hero-img img {
@@ -177,7 +191,7 @@ header ul :hover {
   }
   .hero .hero-text {
     -ms-flex-preferred-size: 100vw;
-        flex-basis: 100vw;
+    flex-basis: 100vw;
     padding-top: 0;
   }
   .hero .hero-text h1 {
@@ -231,8 +245,8 @@ header ul :hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 100px;
 }
 
@@ -268,11 +282,11 @@ header ul :hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding-bottom: 100px;
   }
   .category__row {
@@ -286,7 +300,7 @@ header ul :hover {
     width: 100%;
     height: 250px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     background-color: #c93235;
   }
   .category__row a :hover {
@@ -328,11 +342,11 @@ header ul :hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 100px;
 }
 
@@ -341,7 +355,7 @@ header ul :hover {
   text-align: center;
   width: 30%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
 }
@@ -378,7 +392,7 @@ header ul :hover {
 
 .testimonials__card:hover {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -390,8 +404,8 @@ header ul :hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .testimonials__card {
     width: 100%;
@@ -406,8 +420,8 @@ header ul :hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .updates form {
@@ -417,8 +431,8 @@ header ul :hover {
   justify-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
   border: 2px solid #c93235;
   border-radius: 6px;
@@ -465,7 +479,7 @@ footer {
   padding-bottom: 30px;
   font-size: 20px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 ::-webkit-scrollbar {
@@ -536,8 +550,8 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-bottom: 50px;
   }
   .workshops__content h4 {
@@ -574,11 +588,11 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 70px;
 }
 
@@ -586,7 +600,7 @@ footer {
   text-align: center;
   width: 30%;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
   background-color: #ffffff;
@@ -624,7 +638,7 @@ footer {
 
 .founders__card:hover {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -636,8 +650,8 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .founders__card {
     width: 100%;
@@ -714,8 +728,8 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-bottom: 50px;
   }
   .contact__content h4 {
@@ -803,9 +817,9 @@ footer {
 
 .gallery {
   -webkit-columns: 4;
-          columns: 4;
+  columns: 4;
   -webkit-column-gap: 15px;
-          column-gap: 15px;
+  column-gap: 15px;
 }
 
 .gallery__item {
@@ -814,7 +828,7 @@ footer {
   padding: 10px;
   overflow: hidden;
   -webkit-column-break-inside: avoid;
-          break-inside: avoid;
+  break-inside: avoid;
   border-radius: 10px;
 }
 
@@ -838,20 +852,20 @@ footer {
   transition: all 0.3s ease-out;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1110px) {
   .gallery {
     -webkit-columns: 3;
-            columns: 3;
+    columns: 3;
   }
 }
 
 @media (max-width: 540px) {
   .gallery {
     -webkit-columns: 1;
-            columns: 1;
+    columns: 1;
   }
 }
 
@@ -862,11 +876,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .gallery_categories p {
@@ -878,7 +892,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 18px;
   text-decoration: none;
   padding: 5px 15px;
@@ -905,7 +919,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .gallery_categories button {
     padding: 3px 10px;
@@ -926,8 +940,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
